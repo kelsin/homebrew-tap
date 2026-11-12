@@ -7,7 +7,10 @@ class SyncRoms < Formula
   sha256 "2d450532d95efe7defdde55b127f0139278c7841d6f3095c1dd8ceb640ee221e"
   license :cannot_represent
 
+  depends_on "pillow"
   depends_on "python@3.15"
+
+  pypi_packages exclude_packages: "pillow"
 
   resource "boto3" do
     url "https://files.pythonhosted.org/packages/3a/d7/6c82dff652082a4bab907b7a5833933a362f12400f14bd7a9935a330145e/boto3-1.43.119-py3-none-any.whl"
