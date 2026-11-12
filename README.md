@@ -17,3 +17,6 @@ python3 scripts/wheel-resources.py Formula/sync-roms.rb
 ```
 
 The script pins each resource to the same version and swaps in its `py3-none-any` wheel.
+
+Pillow isn't a resource: it comes from Homebrew's `pillow` formula (`pypi_packages exclude_packages: "pillow"`),
+since it has no pure-Python wheel and building it needs Homebrew's image libraries.
