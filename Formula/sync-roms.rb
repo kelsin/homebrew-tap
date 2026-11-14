@@ -3,8 +3,8 @@ class SyncRoms < Formula
 
   desc "Download ROMs and BIOS files from an S3 bucket onto handheld SD cards"
   homepage "https://github.com/kelsin/sync-roms"
-  url "https://github.com/kelsin/sync-roms/releases/download/v2.7.0/sync_roms-2.7.0.tar.gz"
-  sha256 "a943f8b62a341b663f04396f36dd6a1714a0289589fb2bb1e9af68000c7bd3eb"
+  url "https://github.com/kelsin/sync-roms/releases/download/v2.8.0/sync_roms-2.8.0.tar.gz"
+  sha256 "ffe958cc88b86a3f5cc5e16ba21441bd99a696a16d4f4d7dd372130894da461e"
   license :cannot_represent
 
   depends_on "pillow"
@@ -13,13 +13,13 @@ class SyncRoms < Formula
   pypi_packages exclude_packages: "pillow"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/36/5a/8af6cf092d9212091b8fc9bbf559bd04916094883a3c79a2464e715a1adf/boto3-1.44.1-py3-none-any.whl"
-    sha256 "1342653b8af9dc89f182cb5c0dfd5fa10f430d757c0ebd00326c053a6270d2c4"
+    url "https://files.pythonhosted.org/packages/72/ac/d6fb4b50f688b106a9be682d5146829d717bddafef04b061b6ef43d1a859/boto3-1.44.2-py3-none-any.whl"
+    sha256 "d62ff8a9eb06cab9f0b4242d7a2907a8fff9cca630e27ef736660f9d53e5b18e"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/4d/45/ea4a91a51d6cafd6a7f7b0b8b88767c6d7054dc588ffcb7d1e11e9402e69/botocore-1.44.1-py3-none-any.whl"
-    sha256 "7a741074a78e28187c88d9f7f91db18731ea91725455873d863ae63ea35e75f3"
+    url "https://files.pythonhosted.org/packages/ee/de/c9df76a63d82203a335b2ab02e5a976758747c9a5960b096dbc00c22f8eb/botocore-1.44.2-py3-none-any.whl"
+    sha256 "f255849e8adc413812162e100cf53c4d096d07d9fd6f1773d90fa6034f7d8980"
   end
 
   resource "jmespath" do
@@ -83,8 +83,8 @@ class SyncRoms < Formula
   end
 
   resource "textual-image" do
-    url "https://files.pythonhosted.org/packages/26/eb/437369a7ca3effe4072b99ab2f7578805e4dec313dd7250309d2860bf125/textual_image-0.14.3-py3-none-any.whl"
-    sha256 "3cd6cc5ed1c493cbb3c221e0d576c5a0779f85a683ffe1b8ed29a1b93797f009"
+    url "https://files.pythonhosted.org/packages/74/48/517cf9b8414351105d4b1212cc2279b189bee1d87ab9e823cf53f18ab5ac/textual_image-0.14.4-py3-none-any.whl"
+    sha256 "d5e1c5f55a67c2b800042da73a8303eb1977f59e6f7526adc65021395b879d78"
   end
 
   resource "typing-extensions" do
