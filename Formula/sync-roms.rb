@@ -3,8 +3,8 @@ class SyncRoms < Formula
 
   desc "Download ROMs and BIOS files from an S3 bucket onto handheld SD cards"
   homepage "https://github.com/kelsin/sync-roms"
-  url "https://github.com/kelsin/sync-roms/releases/download/v3.8.0/sync_roms-3.8.0.tar.gz"
-  sha256 "ce0a1502cd3f1ad226a3ea83ded9c554087f0c660c00f4c3554730450253d903"
+  url "https://github.com/kelsin/sync-roms/releases/download/v3.9.0/sync_roms-3.9.0.tar.gz"
+  sha256 "455b876cf8ccc0980445276ef01962fd7f6e84f1d940f95f2675d151f120cd95"
   license :cannot_represent
 
   depends_on "pillow"
@@ -48,8 +48,8 @@ class SyncRoms < Formula
   end
 
   resource "platformdirs" do
-    url "https://files.pythonhosted.org/packages/7c/ae/ecbbbfd0e4343a6a521d49b3c8656fb4643dee2a4f6eaf941cf3280391a8/platformdirs-4.14.5-py3-none-any.whl"
-    sha256 "8e778c6fa421516f4d3369449f8df3b0e1b72c0e0005fe88e3ec772d0a14e750"
+    url "https://files.pythonhosted.org/packages/c8/80/c4c5bcb7280579a021d71d35894230926202ce8f09aa051ced447189f652/platformdirs-4.14.6-py3-none-any.whl"
+    sha256 "57d7bbea7c41e86b2063409934372f3ea3a396ec5e4bad595c6cb50cbc5449bd"
   end
 
   resource "pygments" do
