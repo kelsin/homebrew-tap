@@ -3,8 +3,8 @@ class SyncRoms < Formula
 
   desc "Download ROMs and BIOS files from an S3 bucket onto handheld SD cards"
   homepage "https://github.com/kelsin/sync-roms"
-  url "https://github.com/kelsin/sync-roms/releases/download/v3.18.0/sync_roms-3.18.0.tar.gz"
-  sha256 "558a835abc6616de8dbb47f4398aed1df5e7e725476ac53f71b24765b904e3db"
+  url "https://github.com/kelsin/sync-roms/releases/download/v3.19.0/sync_roms-3.19.0.tar.gz"
+  sha256 "d452f38422dcd3591338e65c3417ef3f0f12a7284cc6c1e5999b1d6862d5d6c8"
   license :cannot_represent
 
   depends_on "pillow"
@@ -13,13 +13,13 @@ class SyncRoms < Formula
   pypi_packages exclude_packages: "pillow"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/49/59/4aece84bc2d600f70e5b8a8bc409d028b60e38586d2dd5c0eac00cdf10e5/boto3-1.44.6-py3-none-any.whl"
-    sha256 "7d5f43c824bdfcf203fd7c115cfb7bd4283f63caac01c731d8a667f8da096d52"
+    url "https://files.pythonhosted.org/packages/9e/66/73c8c57119a8acf3688dfbe95c4648e8b3e4d6a7a3783b0619b65d201f02/boto3-1.44.9-py3-none-any.whl"
+    sha256 "aff889e8ca6f6006f0b5658b712941471d21e4675d6d48421974a20a5a17a918"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/3a/6a/fee453894524071664742111b265604b33eb2aaac7efc5cfc4602e3826fa/botocore-1.44.6-py3-none-any.whl"
-    sha256 "757c7f33d006e8a3c873e1fed71611baaaa2ee4d72e6f830ec0423d02ec5de2d"
+    url "https://files.pythonhosted.org/packages/20/ad/f8143d7a78503c3b67d135589cd1da82d3867ed1f37149e64d6f9bef6cfb/botocore-1.44.9-py3-none-any.whl"
+    sha256 "6966752d38514a8e457ea062ea171b2b320c55bad23c8ae4f74f88296e00890d"
   end
 
   resource "jmespath" do
@@ -48,8 +48,8 @@ class SyncRoms < Formula
   end
 
   resource "platformdirs" do
-    url "https://files.pythonhosted.org/packages/f8/46/3737af9f971f3934794103256d7f1ed6200a62be0c7b7ff09ac4cf6b3422/platformdirs-4.14.7-py3-none-any.whl"
-    sha256 "391513b74707c42335fff3ea17eaac657a7ee9ffcadd809634d34ea594d0122c"
+    url "https://files.pythonhosted.org/packages/5b/be/373cc7341f53bfd3acba3e5db62433fd960a45fcf73ad64a5f4d27e74910/platformdirs-4.14.8-py3-none-any.whl"
+    sha256 "1e34af590de4d978631b751eb2202f2fee4497537a17c1720b12fcf57b331392"
   end
 
   resource "pygments" do
