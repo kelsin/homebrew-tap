@@ -3,8 +3,8 @@ class SyncRoms < Formula
 
   desc "Download ROMs and BIOS files from an S3 bucket onto handheld SD cards"
   homepage "https://github.com/kelsin/sync-roms"
-  url "https://github.com/kelsin/sync-roms/releases/download/v3.29.0/sync_roms-3.29.0.tar.gz"
-  sha256 "8b2138a386dfa345056e8f1dc35177315247be59a85b7e82bda6b31029ac892b"
+  url "https://github.com/kelsin/sync-roms/releases/download/v3.30.0/sync_roms-3.30.0.tar.gz"
+  sha256 "f134bebdd38ad50285ccd447eea634ff4818b58d2798d70f0d0a340a4d35925f"
   license :cannot_represent
 
   depends_on "pillow"
