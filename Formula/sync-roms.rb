@@ -3,8 +3,8 @@ class SyncRoms < Formula
 
   desc "Download ROMs and BIOS files from an S3 bucket onto handheld SD cards"
   homepage "https://github.com/kelsin/sync-roms"
-  url "https://github.com/kelsin/sync-roms/releases/download/v4.0.0/sync_roms-4.0.0.tar.gz"
-  sha256 "dc461c5883c3f6740880b31e8e00efcc57dec570add5df241c600ca57e40c019"
+  url "https://github.com/kelsin/sync-roms/releases/download/v4.1.0/sync_roms-4.1.0.tar.gz"
+  sha256 "227ef8089ff000e974f395413ed7230f1e29ba21b182ae0b4d912b86e64b66d7"
   license :cannot_represent
 
   depends_on "pillow"
@@ -13,13 +13,13 @@ class SyncRoms < Formula
   pypi_packages exclude_packages: "pillow"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/db/d2/809886fa059a287b8c994c48e00c5dd8c8814438852db61812e6e5c436e2/boto3-1.44.10-py3-none-any.whl"
-    sha256 "2ec7370e9f387bf5ba3ae93024d18b3a9fd07eb697062d81165e3672f16a9335"
+    url "https://files.pythonhosted.org/packages/78/e2/b4b0764d2da73c91c0ee3d224c95a5d6039217419e2787bde2d2297da975/boto3-1.44.11-py3-none-any.whl"
+    sha256 "a39a4d09ee47ab9a12e1dccf14b184d6002c5ae699d9205fda119aac69910119"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/93/12/0915f9467a7c6f2fcdb56a2f415e0831a993825a424d8c033cdf8edd1dc0/botocore-1.44.10-py3-none-any.whl"
-    sha256 "d9c8602d24df40e366bbe80157c6f94155c91c367eaaabeceb26d47532f6baba"
+    url "https://files.pythonhosted.org/packages/9b/ad/f4e0e67eda1cfd402726abbc82da14a0d9129f3ff0795acbfadcc9060497/botocore-1.44.11-py3-none-any.whl"
+    sha256 "441c5ebbad9bb2911120d12bda448d4b55793fc52fc7425d9392ebb02f4814a4"
   end
 
   resource "jmespath" do
